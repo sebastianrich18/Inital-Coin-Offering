@@ -1,4 +1,5 @@
 require("@nomiclabs/hardhat-waffle");
+require("@nomiclabs/hardhat-etherscan");
 require("dotenv").config({ path: ".env" });
 
 const ALCHEMY_API_KEY_URL = process.env.ALCHEMY_API_KEY_URL;
@@ -13,4 +14,7 @@ module.exports = {
       accounts: [RINKEBY_PRIVATE_KEY],
     },
   },
+  etherscan: {
+    apiKey: "9TXZ4JKNUJCZSMVHCMUF4IUYU8BQ2RKFTA"
+  }
 };
